@@ -3,185 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Gourmet Haven - Exquisite Dining Experience</title>
-    <meta name="description" content="Experience culinary excellence at The Gourmet Haven. Discover our menu, make a reservation, and immerse yourself in sophisticated ambiance.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Google Fonts - Example (replace with actual elegant fonts) -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>The Paladar - Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="main-header">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="The Gourmet Haven Logo">
-                </a>
+    <header class="header">
+        <div class="container">
+            <div class="logo">The Paladar</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li class="dropdown">
+                        <a href="#gallery">GALLERY <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#gallery">Food</a>
+                            <a href="#gallery">Restaurant</a>
+                        </div>
+                    </li>
+                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#reservation" class="btn btn-primary">RESERVATION</a>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="events.html">Events & Private Dining</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <!-- Optional: <li><a href="blog.html">Blog</a></li> -->
-            </ul>
-            <div class="burger-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
+        </div>
     </header>
 
     <main>
-        <section class="hero-section">
-            <div class="hero-video-container">
-                <video autoplay muted loop playsinline class="hero-video">
-                    <source src="videos/hero-background.mp4" type="video/mp4">
-                    <!-- Add other formats for wider browser support -->
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="hero-content">
-                <h1 class="animated-tagline">Experience Culinary Excellence.</h1>
-                <p class="intro-text">Where every dish is a masterpiece and every moment is an occasion.</p>
-                <div class="cta-buttons">
-                    <a href="menu.html" class="btn btn-primary">View Menu</a>
-                    <a href="reservations.html" class="btn btn-secondary">Make a Reservation</a>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <p class="subtitle">Welcome to Paladar Restaurant</p>
+                <h1>Eat Healthy and Natural Food</h1>
+                <p class="description">Paladar is a restaurant, bar and coffee roastery located on London. We have awesome recipes and the most talented chefs in town.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">OUR MENU</a>
+                    <a href="#about" class="btn btn-secondary">ABOUT US</a>
                 </div>
             </div>
         </section>
 
-        <section class="about-summary section-padding reveal-on-scroll">
+        <section id="about" class="about-section">
             <div class="container">
-                <div class="about-text">
-                    <h2>Our Story, Our Passion</h2>
-                    <p>The Gourmet Haven was born from a passion for exquisite food and unparalleled dining experiences. We meticulously source the finest ingredients, crafting dishes that are both innovative and deeply rooted in culinary tradition. Join us for a journey of flavors...</p>
-                    <a href="about.html" class="btn btn-tertiary">Learn More</a>
+                <div class="about-content">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Our passion for food drives us to create unforgettable dining experiences. We source the freshest ingredients and combine traditional techniques with modern culinary innovations.</p>
                 </div>
                 <div class="about-image">
-                    <img src="images/restaurant-interior-summary.jpg" alt="Elegant restaurant interior">
+                    <!-- Placeholder for an image of the restaurant or chefs -->
+                    <img src="https://via.placeholder.com/500x350/333333/FFFFFF?text=Restaurant+Interior" alt="Restaurant Interior">
                 </div>
             </div>
         </section>
 
-        <section class="signature-dishes section-padding bg-light reveal-on-scroll">
+        <section id="menu" class="menu-section">
             <div class="container">
-                <h2>Signature Creations</h2>
-                <p class="section-description">A glimpse into our chef's celebrated artistry.</p>
-                <div class="dish-grid">
-                    <div class="dish-item">
-                        <img src="images/dish1.jpg" alt="Dish Name 1">
-                        <h3>Seared Scallops</h3>
-                        <p>Perfectly seared scallops with saffron risotto and asparagus.</p>
-                    </div>
-                    <div class="dish-item">
-                        <img src="images/dish2.jpg" alt="Dish Name 2">
-                        <h3>Duck Confit</h3>
-                        <p>Crispy duck leg confit, served with rich potato gratin and cherry reduction.</p>
-                    </div>
-                    <div class="dish-item">
-                        <img src="images/dish3.jpg" alt="Dish Name 3">
-                        <h3>Chocolate Lava Cake</h3>
-                        <p>Decadent chocolate lava cake with a molten center and vanilla bean ice cream.</p>
-                    </div>
+                <h2>Our Delicious Menu</h2>
+                <div class="menu-categories">
+                    <button class="menu-cat-btn active">Appetizers</button>
+                    <button class="menu-cat-btn">Main Courses</button>
+                    <button class="menu-cat-btn">Desserts</button>
+                    <button class="menu-cat-btn">Drinks</button>
                 </div>
-                <div class="text-center mt-4">
-                    <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/100x100/555555/FFFFFF?text=Dish+1" alt="Dish 1">
+                        <div class="item-details">
+                            <h3>Classic Bruschetta</h3>
+                            <p>Toasted bread, fresh tomatoes, basil, garlic, and olive oil.</p>
+                        </div>
+                        <span class="price">$12.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/100x100/555555/FFFFFF?text=Dish+2" alt="Dish 2">
+                        <div class="item-details">
+                            <h3>Crispy Calamari</h3>
+                            <p>Lightly fried calamari served with spicy marinara sauce.</p>
+                        </div>
+                        <span class="price">$15.00</span>
+                    </div>
+                    <!-- Add more menu items here -->
                 </div>
             </div>
         </section>
 
-        <section class="testimonials section-padding parallax-bg reveal-on-scroll">
+        <section id="gallery" class="gallery-section">
             <div class="container">
-                <h2>What Our Guests Say</h2>
-                <div class="testimonial-carousel">
-                    <!-- Testimonial items will be populated/managed by JS for carousel functionality -->
-                    <div class="testimonial-item">
-                        <p>"An unforgettable dining experience! The ambiance, service, and food were all impeccable."</p>
-                        <h4>- Emily R.</h4>
-                    </div>
-                    <div class="testimonial-item">
-                        <p>"The Gourmet Haven is truly a gem. Every dish was a culinary delight."</p>
-                        <h4>- David L.</h4>
-                    </div>
+                <h2>Our Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="https://via.placeholder.com/300x200/444444/FFFFFF?text=Gallery+Image+1" alt="Gallery Image 1">
+                    <img src="https://via.placeholder.com/300x200/444444/FFFFFF?text=Gallery+Image+2" alt="Gallery Image 2">
+                    <img src="https://via.placeholder.com/300x200/444444/FFFFFF?text=Gallery+Image+3" alt="Gallery Image 3">
+                    <img src="https://via.placeholder.com/300x200/444444/FFFFFF?text=Gallery+Image+4" alt="Gallery Image 4">
+                    <img src="https://via.placeholder.com/300x200/444444/FFFFFF?text=Gallery+Image+5" alt="Gallery Image 5">
+                    <img src="https://via.placeholder.com/300x200/444444/FFFFFF?text=Gallery+Image+6" alt="Gallery Image 6">
                 </div>
-                <button class="carousel-nav prev">❮</button>
-                <button class="carousel-nav next">❯</button>
             </div>
         </section>
 
-        <section class="reservations-promo section-padding reveal-on-scroll">
-            <div class="container text-center">
-                <h2>Ready to Indulge?</h2>
-                <p>Secure your table for an evening of culinary magic.</p>
-                <a href="reservations.html" class="btn btn-primary btn-lg">Make a Reservation Today</a>
+        <section id="team" class="team-section">
+            <div class="container">
+                <h2>Meet Our Talented Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/200x200/666666/FFFFFF?text=Chef+1" alt="Chef John Doe">
+                        <h3>John Doe</h3>
+                        <p>Head Chef</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/200x200/666666/FFFFFF?text=Chef+2" alt="Chef Jane Smith">
+                        <h3>Jane Smith</h3>
+                        <p>Sous Chef</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/200x200/666666/FFFFFF?text=Manager+1" alt="Manager Alice Brown">
+                        <h3>Alice Brown</h3>
+                        <p>Restaurant Manager</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Restaurant St, London, UK</p>
+                        <p><i class="fas fa-phone"></i> +44 20 1234 5678</p>
+                        <p><i class="fas fa-envelope"></i> info@thepaladar.com</p>
+                        <h3>Opening Hours</h3>
+                        <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                        <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Send us a Message</h3>
+                        <form>
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <input type="text" placeholder="Subject">
+                            <textarea placeholder="Your Message" rows="5"></textarea>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservation" class="reservation-section">
+            <div class="container">
+                <h2>Make a Reservation</h2>
+                <form class="reservation-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="date" required>
+                    <input type="time" required>
+                    <input type="number" placeholder="Number of Guests" min="1" required>
+                    <textarea placeholder="Special Requests" rows="3"></textarea>
+                    <button type="submit" class="btn btn-primary">Book Now</button>
+                </form>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col about-col">
-                    <img src="images/logo-light.png" alt="The Gourmet Haven Logo" class="footer-logo">
-                    <p>The Gourmet Haven offers a refined dining experience with a focus on fresh, seasonal ingredients and innovative culinary techniques.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><img src="images/icon-facebook.png" alt="Facebook"></a>
-                        <a href="#" aria-label="Instagram"><img src="images/icon-instagram.png" alt="Instagram"></a>
-                        <a href="#" aria-label="Twitter"><img src="images/icon-twitter.png" alt="Twitter"></a>
-                    </div>
-                </div>
-                <div class="footer-col links-col">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col contact-col">
-                    <h3>Contact Us</h3>
-                    <p>123 Culinary Lane, Gastronomy City, GC 45678</p>
-                    <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
-                    <p>Email: <a href="mailto:info@gourmethaven.com">info@gourmethaven.com</a></p>
-                    <p><strong>Hours:</strong><br>Mon-Sat: 5 PM - 10 PM<br>Sunday: Closed</p>
-                </div>
-                <div class="footer-col newsletter-col">
-                    <h3>Newsletter</h3>
-                    <p>Stay updated with our latest dishes and events.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your Email Address" aria-label="Email for Newsletter">
-                        <button type="submit" class="btn btn-newsletter">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 The Gourmet Haven. All rights reserved.</p>
+            <p>&copy; 2023 The Paladar. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Email Newsletter Pop-up (hidden by default) -->
-    <div class="newsletter-popup-overlay">
-        <div class="newsletter-popup">
-            <button class="close-popup">&times;</button>
-            <h3>Join Our Newsletter!</h3>
-            <p>Be the first to know about our seasonal menus, special events, and exclusive offers.</p>
-            <form class="popup-newsletter-form">
-                <input type="text" placeholder="Your Name (Optional)" aria-label="Your Name">
-                <input type="email" placeholder="Your Email Address" required aria-label="Your Email Address">
-                <button type="submit" class="btn btn-primary">Subscribe Now</button>
-            </form>
-            <p class="popup-no-thanks"><a href="#">No thanks, I'll explore later.</a></p>
-        </div>
-    </div>
-
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
